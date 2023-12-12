@@ -1,240 +1,229 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 
+public class Numbers extends MyCalculator implements ActionListener {
 
-public class Numbers extends MyCalculator implements ActionListener
-{
-	
+    public void actionPerformed(ActionEvent event) {
+        JButton scr = (JButton) event.getSource();
 
-	public  void actionPerformed(ActionEvent event){
-		JButton scr = (JButton) event.getSource();									//used for when a Button is clicked 
-		
-		if(scr.equals(numberButton1)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "1";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "1";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "1";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "1";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		
-		if(scr.equals(numberButton2)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "2";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "2";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "2";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "2";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton3)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "3";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "3";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "3";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "3";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton4)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "4";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "4";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "4";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "4";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton5)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "5";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "5";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "5";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "5";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton6)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "6";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "6";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "6";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "6";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton7)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "7";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "7";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "7";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "7";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton8)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "8";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "8";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "8";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "8";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton9)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "9";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "9";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "9";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "9";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(numberButton)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "0";												//Make TempString into One
-					}else{
-						tempString1 = tempString1 + "0";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "0";												//Make TempString into One
-					}else{
-						tempString2 = tempString2 + "0";											//If same Button clicked again it adds 1 next to the other number
-						}
-			}
-		}
-		if(scr.equals(decimalButton)){												//If source is equal to Button Number One										
-			if(opChosen == false){													//Then if operation is not choosen
-				if(tempString1 == null){											//Then if Temp String is empty 
-					tempString1 = "0.";												//Make TempString into One
-					}else
-						if(tempString1 != null){
-							if(tempString1.contains(".")){
-								System.out.println("You already have a decimal point!");
-							}else{
-								tempString1 += ".";
-							}
-						}
-			}else{
-				if(tempString2 == null){											//Then if Temp String is empty 
-					tempString2 = "0.";												//Make TempString into One
-					}else
-						if(tempString2 != null ){
-							if(tempString2.contains(".")){
-								System.out.println("Again you already have a decimal point!");
-							}else{
-								tempString2 += ".";
-							}
-						}
-					
-					}
-			}
-		
-			//This if statement is used for running negativeButton
-			if(scr.equals(negativeButton)){
-				if(opChosen == false){
-					if(tempString1 == null){
-						tempString1 = "-";
-					}else
-						if(tempString1 != null && tempString1.startsWith("-")){
-							tempString1 = tempString1.substring(1);
-						}else{
-							tempString1 = "-" + tempString1;
-				}
-			}else{
-				if(tempString2 == null){
-					tempString2 = "-";
-				}else
-					if(tempString2 != null && tempString2.startsWith("-")){
-						tempString2 = tempString2.substring(1);
-					}else{
-						tempString2 = "-" + tempString2;
-					}
-			}
-		}//end of negative Button if statements 
-			
-		if(scr.equals(backSpaceButton)){
-			if(opChosen == false){
-				if(tempString1 == null){
-					System.out.println("CAN'T DELETE NOTHING!!!");
-				}else{
-					tempString1 = tempString1.substring(0, tempString1.length()-1);
-				}
-			}else{
-				if(tempString2 == null){
-					System.out.println("CAN'T DELETE NOTHING!!!");
-				}else{
-					tempString2 = tempString2.substring(0, tempString2.length()-1);
-				}
-			}
-		}
-			
-		if(equalsClicked == false){
-			if(opChosen == false){
-				outputTextArea.setText(tempString1);
-			}else{
-				outputTextArea.setText(tempString2);
-			}
-		}
-	
-	}//end of actionPerformed code
+        if (scr.equals(numberButton1)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "1";
+                } else {
+                    tempString1 = tempString1 + "1";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "1";
+                } else {
+                    tempString2 = tempString2 + "1";
+                }
+            }
+        }
+
+        if (scr.equals(numberButton2)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "2";
+                } else {
+                    tempString1 = tempString1 + "2";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "2";
+                } else {
+                    tempString2 = tempString2 + "2";
+                }
+            }
+        }
+        if (scr.equals(numberButton3)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "3";
+                } else {
+                    tempString1 = tempString1 + "3";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "3";
+                } else {
+                    tempString2 = tempString2 + "3";
+                }
+            }
+        }
+        if (scr.equals(numberButton4)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "4";
+                } else {
+                    tempString1 = tempString1 + "4";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "4";
+                } else {
+                    tempString2 = tempString2 + "4";
+                }
+            }
+        }
+        if (scr.equals(numberButton5)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "5";
+                } else {
+                    tempString1 = tempString1 + "5";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "5";
+                } else {
+                    tempString2 = tempString2 + "5";
+                }
+            }
+        }
+        if (scr.equals(numberButton6)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "6";
+                } else {
+                    tempString1 = tempString1 + "6";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "6";
+                } else {
+                    tempString2 = tempString2 + "6";
+                }
+            }
+        }
+        if (scr.equals(numberButton7)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "7";
+                } else {
+                    tempString1 = tempString1 + "7";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "7";
+                } else {
+                    tempString2 = tempString2 + "7";
+                }
+            }
+        }
+        if (scr.equals(numberButton8)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "8";
+                } else {
+                    tempString1 = tempString1 + "8";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "8";
+                } else {
+                    tempString2 = tempString2 + "8";
+                }
+            }
+        }
+        if (scr.equals(numberButton9)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "9";
+                } else {
+                    tempString1 = tempString1 + "9";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "9";
+                } else {
+                    tempString2 = tempString2 + "9";
+                }
+            }
+        }
+        if (scr.equals(numberButton)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "0";
+                } else {
+                    tempString1 = tempString1 + "0";
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "0";
+                } else {
+                    tempString2 = tempString2 + "0";
+                }
+            }
+        }
+        if (scr.equals(decimalButton)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "0.";
+                } else if (tempString1 != null) {
+                    if (tempString1.contains(".")) {
+                        System.out.println("You already have a decimal point!");
+                    } else {
+                        tempString1 += ".";
+                    }
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "0.";
+                } else if (tempString2 != null) {
+                    if (tempString2.contains(".")) {
+                        System.out.println("Again you already have a decimal point!");
+                    } else {
+                        tempString2 += ".";
+                    }
+                }
+            }
+        }
+
+        if (scr.equals(negativeButton)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    tempString1 = "-";
+                } else if (tempString1 != null && tempString1.startsWith("-")) {
+                    tempString1 = tempString1.substring(1);
+                } else {
+                    tempString1 = "-" + tempString1;
+                }
+            } else {
+                if (tempString2 == null) {
+                    tempString2 = "-";
+                } else if (tempString2 != null && tempString2.startsWith("-")) {
+                    tempString2 = tempString2.substring(1);
+                } else {
+                    tempString2 = "-" + tempString2;
+                }
+            }
+        }
+
+        if (scr.equals(backSpaceButton)) {
+            if (opChosen == false) {
+                if (tempString1 == null) {
+                    System.out.println("CAN'T DELETE NOTHING!!!");
+                } else {
+                    tempString1 = tempString1.substring(0, tempString1.length() - 1);
+                }
+            } else {
+                if (tempString2 == null) {
+                    System.out.println("CAN'T DELETE NOTHING!!!");
+                } else {
+                    tempString2 = tempString2.substring(0, tempString2.length() - 1);
+                }
+            }
+        }
+
+        if (equalsClicked == false) {
+            if (opChosen == false) {
+                outputTextArea.setText(tempString1);
+            } else {
+                outputTextArea.setText(tempString2);
+            }
+        }
+    }
 }
