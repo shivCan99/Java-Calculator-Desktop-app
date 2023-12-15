@@ -4,6 +4,7 @@
 # Things used in project 
   Three different classes MyCalculator class which is the main class, Number class and
   Calculation class for usablity and keeping code split up for better practice.
+  
 
 # Description
   GUI application create with Eclipse that is split into three classes MyCalculator, 
